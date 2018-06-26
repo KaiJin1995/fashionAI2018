@@ -1,6 +1,6 @@
 # FashionAI2018 服装属性标签识别
 
-##环境
+## 环境
 caffe+keras
 python 2.7
 numpy 1.14.2
