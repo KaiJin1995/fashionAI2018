@@ -1,0 +1,32 @@
+net: "/home/freedom/caffe/tianchifusai/InceptionV3/20180529/trainSkirtPant_inception-v4.prototxt"
+
+type:"RMSProp"
+rms_decay: 0.9
+delta:1
+
+test_iter: 354
+test_interval: 20000000
+test_initialization: false
+
+base_lr: 0.01
+#lr_policy: "step"
+gamma: 0.1
+lr_policy: "multistep"
+stepvalue:[30000,50000]
+
+#stepsize: 5700	
+
+	
+display: 100
+max_iter: 60000
+
+#momentum: 0.9
+weight_decay: 0.0005
+
+snapshot: 10000
+snapshot_prefix: "/home/freedom/caffe/tianchifusai/InceptionV3/20180529/weights/InceptionV4_SkirtPant"
+solver_mode: GPU
+
+#clip_gradients:60
+average_loss: 20
+iter_size:4
